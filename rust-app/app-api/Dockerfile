@@ -15,8 +15,8 @@ RUN cargo build --release
 # 编译使用upx压缩
 RUN RUST_BACKTRACE=1 cargo build  --release && upx /app/target/release/app-api
 
-# 运行
-FROM --platform=$TARGETPLATFORM scratch as runtime
+# 运行 scratch ,busybox
+FROM --platform=$TARGETPLATFORM busybox as runtime
 
 WORKDIR /app
 
