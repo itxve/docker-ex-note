@@ -12,11 +12,13 @@ networks:
 
 
 services:
-  app-rust-api-2:
-    container_name: app-rust-api-2
-    image: app/rust-api
+  rust-api:
+    container_name: app-rust-2
+    image: 1998crtxr/rust-api:v1.2
     build:
       context: .
+      args:
+        - TARGETPLATFORM=linux/amd64,linux/arm64
     dns:
       - 8.8.8.8
     ports:

@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app-ncc:
+    build: .
+    container_name: node-app-server-ncc-test
+    image: node-app-server-ncc
+    ports:
+      - 6003:5003
+    volumes:
+       - ./dist:/app

@@ -1,0 +1,19 @@
+{
+  "name": "serve-ncc",
+  "version": "1.0.0",
+  "description": "ncc",
+  "main": "src/main.mjs",
+  "scripts": {
+    "start:ncc": "node src/main.mjs",
+    "build:ncc": "ncc build src/main.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
+  }
+}

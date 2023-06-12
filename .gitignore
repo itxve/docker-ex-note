@@ -1,3 +1,5 @@
 .history
 target
 volume
+node_modules
+dist

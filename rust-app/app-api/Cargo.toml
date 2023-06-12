@@ -1,7 +1,10 @@
 [package]
 name = "app-api"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+
+[registries.crates-io]
+protocol = "sparse"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,6 +15,7 @@ tokio = { version = "1.21.2", default-features = false, features = ["macros", "r
 actix-web = "4"
 anyhow = {version="1.0.66"}
 reqwest = {version="0.11.12", default-features=false, features = ["json", "rustls-tls"]}
+rand={version="0.8.5"}
 
 
 [profile.release]

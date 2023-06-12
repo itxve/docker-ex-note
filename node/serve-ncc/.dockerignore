@@ -1,0 +1,7 @@
+.histroy
+.DS_Store
+docker-compose.yaml
+Dockerfile
+node_modules
+dist
+yarn.lock

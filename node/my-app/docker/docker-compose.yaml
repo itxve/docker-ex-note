@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app-target:
+    image: app/${target}
+    build: 
+      context: .
+      target: ${target}
+      args:
+        flag: ${target} module
+    environment:
+      - module=${target}    
+
+
+
+    
